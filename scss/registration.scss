@@ -1,0 +1,295 @@
+body {
+    background-color     : #000;
+    background-image     : url(/img/ФОН-ЗВЕЗДЫ.png);
+    background-attachment: fixed;
+
+
+}
+
+.main-content {
+    width: 100%;
+
+    .heading {
+        position  : relative;
+        text-align: center;
+        overflow: hidden;   
+        margin: 100px;
+
+        .text {
+            font-family: Montserrat;
+            font-style : normal;
+            font-weight: normal;
+            font-size  : 40px;
+            line-height: 49px;
+            /* identical to box height */
+
+            letter-spacing: 1.1em;
+            text-transform: uppercase;
+
+            @media (max-width:700px) {
+                // font-size: 3vw;
+            }
+
+            color: #FFFFFF;
+        }
+    }
+
+    .planet-cart {
+        max-width: 1214px;
+        min-width: 90px;
+
+        margin       : auto;
+        margin-bottom: 200px;
+        padding      : 60px;
+
+        background     : rgba(91, 91, 91, 0.05);
+        border-radius  : 60px;
+        backdrop-filter: blur(5px);
+
+
+        .information {
+            p {
+                margin-top: 30px;
+            }
+
+            .under-text {
+
+                font-family   : Montserrat;
+                font-style    : normal;
+                font-weight   : bold;
+                font-size     : 20px;
+                line-height   : 24px;
+                letter-spacing: 0.325em;
+                text-transform: uppercase;
+
+                color: #FFFFFF;
+            }
+
+            form {
+                max-width: 590px;
+
+                .input{
+                    width: 100%;
+                    input {
+                        border: none;
+                        width : 100%;
+                        height: 56px;
+    
+                        padding: 0 20px;
+                        margin : 20px 0;
+    
+                        background   : rgba(255, 255, 255, 0.1);
+                        border-radius: 34px;
+    
+                        font-family: Century Gothic;
+                        font-style : normal;
+                        font-weight: normal;
+                        font-size  : 16px;
+                        line-height: 20px;
+                        /* identical to box height */
+    
+                        letter-spacing: 0.325em;
+    
+                        color: #FFFFFF;
+                    }
+    
+                    input::placeholder {
+                        font-family: Century Gothic;
+                        font-style : normal;
+                        font-weight: normal;
+                        font-size  : 16px;
+                        line-height: 20px;
+                        /* identical to box height */
+    
+                        letter-spacing: 0.325em;
+    
+                        color: #FFFFFF;
+                    }
+
+                    input:last-child{
+                        margin-bottom: 50px;
+                    }
+    
+                    .radio {
+                        margin: auto;
+                        width : 80%;
+    
+                        div {
+                            display: inline-block;
+                        }
+    
+                        .button {
+                            width : 60px;
+                            height: 60px;
+    
+                            padding-top : 8px;
+                            padding-left: 8px;
+                            margin      : 4%;
+    
+                            background   : rgba(255, 255, 255, 0.01);
+                            border       : 1px solid rgba(255, 255, 255, 0.5);
+                            box-sizing   : border-box;
+                            border-radius: 77px;
+    
+                            font-family: Century Gothic;
+                            font-style : normal;
+                            font-weight: bold;
+                            font-size  : 30px;
+                            line-height: 37px;
+                            /* identical to box height */
+    
+                            letter-spacing: 0.325em;
+    
+                            color: #FFFFFF;
+    
+                            text-align     : center;
+                            justify-content: center;
+    
+                        }
+                    }
+    
+    
+                }
+
+                //new_checkbox
+                // Выключаем стандартный стиль checkbox'а 
+                .checkbox-login01 {
+                    display: none;
+                    width: 1000px;
+                }
+
+                // Так будет выглядеть checkbox в состянии off
+                .style-login01 {
+                    // inline-block для того, что-бы текст был напротив
+                    display: inline-block;
+                    float: left;
+
+                    width : 56px;
+                    height: 56px;
+
+                    border       : 1px solid rgba(255, 255, 255, 0.5);
+                    box-sizing   : border-box;
+                    border-radius: 13px;
+
+                    position    : relative;
+                    margin-right: 10px;
+                    cursor      : pointer;
+
+                    // Так будет выглядеть checkbox в состянии on "checked"
+                    &::before {
+                        // content         : '✔';
+                        content         : '';
+                        position        : absolute;
+                        color           : rgba(74, 252, 59, 0.5);
+                        font-size       : 10px;
+                        height          : 50px;
+                        width           : 50px;
+                        border-radius   : 10px;
+                        background-color: rgba(74, 252, 59, 0.5);
+                        display         : flex;
+                        align-items     : center;
+                        justify-content : center;
+                        top             : 50%;
+                        left            : 50%;
+                        transform       : translate(-50%, -50%);
+                        opacity         : 0;
+                        transition      : .3s;
+                    }
+                }
+                .wrapper-login01{
+                    min-height: 500px;
+
+                }
+                // Стили для текста
+                .text-login01 {
+                    font-family   : Montserrat;
+                    font-style    : normal;
+                    font-weight   : 300;
+                    font-size     : 16px;
+                    line-height   : 25px;
+                    letter-spacing: 0.325em;
+                    color : #FFFFFF;
+                    cursor: pointer;
+                }
+
+                // Соеденяем при нажатии становится не прозрачным стиль
+                .checkbox-login01:checked+.style-login01::before {
+                    opacity: 1;
+                }
+            }
+
+
+
+            .bottom_text {
+
+                min-width : 200px;
+                margin-top: 20px;
+
+                font-family: Montserrat;
+                font-style : normal;
+                font-weight: 300;
+                font-size  : 16px;
+                line-height: 25px;
+                letter-spacing: 0.2em;
+
+                color: #FFFFFF;
+
+            }
+
+            .planeta {
+                width       : 370px;
+                height      : 370px;
+                margin      : auto;
+                margin-right: 0;
+                float       : right;
+
+                max-width : 350px;
+                max-height: 350px;
+                min-width: 100px;
+                min-height: 100px;
+            
+                img {
+                    float : right;
+                    width : 350px;
+                    height: 350px;
+                }
+            }
+
+
+            .button-for-cart-planet {
+                margin    : auto;
+                width     : 350px;
+                height    : 60px;
+                position  : relative;
+                margin-top: 70px;
+
+                background   : linear-gradient(90deg, #00041C 0%, rgba(0, 11, 78, 0) 100%);
+                border-radius: 34px;
+
+
+                .text-for-button {
+                    font-family: Century Gothic;
+                    font-style : normal;
+                    font-weight: bold;
+                    font-size  : 20px;
+                    line-height: 25px;
+                    /* identical to box height */
+
+                    letter-spacing: 0.325em;
+                    text-transform: uppercase;
+
+                    color: #FFFFFF;
+
+                    position: absolute;
+                    top     : 15px;
+                    left    : 20px;
+                }
+            }
+
+
+
+        }
+
+
+    }
+}
