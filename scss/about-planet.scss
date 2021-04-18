@@ -9,32 +9,41 @@ body {
 
 
 .main-content {
-    width: 100%;
+    width     : 100%;
+    margin-top: 100px;
 
     .container {
-        max-width: 1700px;
-        margin   : auto;
-        overflow : hidden;
+        width              : 80%;
+        margin             : auto;
+        // background-color: rgba(255, 0, 179, 0.753);
     }
 
     .heading {
-        position  : relative;
-        text-align: center;
-
-        margin: 100px;
+        margin-bottom: 50px;
 
         .text {
-            font-family: Montserrat;
-            font-style : normal;
-            font-weight: normal;
-            font-size  : 40px;
-            line-height: 49px;
-            /* identical to box height */
-            text-align: center;
+            font-family   : Montserrat;
+            font-style    : normal;
+            font-weight   : normal;
+            line-height   : 24px;
             letter-spacing: 1.1em;
             text-transform: uppercase;
 
             color: #FFFFFF;
+
+            text-align: center;
+        }
+
+        @media (max-width:320px) {
+            font-size: 16px;
+        }
+
+        @media (min-width:768px) {
+            font-size: 20px;
+        }
+
+        @media (min-width:1025px) {
+            font-size: 40px;
         }
     }
 
@@ -92,37 +101,78 @@ body {
                 color: #FFFFFF;
 
             }
+            .planeta {
 
-            @media (min-width:768px) {
-                .planeta {
-                    width        : 370px;
-                    height       : 370px;
-                    margin       : auto;
+                margin   : auto;
+                min-width: 200px;
+                max-width: 350px;
+
+                @media (max-width:320px) {
+                    width: 200px;
+                }
+
+                @media (min-width:769px) {
+                    margin-top: 70px;
+                    width     : 200px;
+
                     margin-right : 0;
                     float        : right;
-                    border-radius: 50%;
+                }
 
+                @media (min-width:1025px) {
+                    margin-top: 70px;
+                    width     : 300px;
+                }
 
-                    img {
-                        width : 350px;
-                        height: 350px;
+                img {
+                    min-width: 200px;
+                    max-width: 350px;
+
+                    @media (max-width:320px) {
+                        width: 200px;
+                    }
+
+                    @media (min-width:769px) {
+                        width: 250px;
+                    margin       : auto;
+
+                    }
+
+                    @media (min-width:1025px) {
+                        width: 300px;
                     }
                 }
             }
+            // @media (min-width:768px) {
+            //     .planeta {
+            //         width        : 370px;
+            //         height       : 370px;
+            //         margin       : auto;
+            //         margin-right : 0;
+            //         float        : right;
+            //         border-radius: 50%;
 
-            @media (max-width:767px) {
-                .planeta {
-                    width        : 370px;
-                    height       : 370px;
-                    border-radius: 50%;
-                    margin: auto;
 
-                    img {
-                        width : 350px;
-                        height: 350px;
-                    }
-                }
-            }
+            //         img {
+            //             width : 350px;
+            //             height: 350px;
+            //         }
+            //     }
+            // }
+
+            // @media (max-width:767px) {
+            //     .planeta {
+            //         width        : 370px;
+            //         height       : 370px;
+            //         border-radius: 50%;
+            //         margin: auto;
+
+            //         img {
+            //             width : 350px;
+            //             height: 350px;
+            //         }
+            //     }
+            // }
 
             .bottom_planet_text {
                 margin-top: 20px;
@@ -156,18 +206,18 @@ body {
                     margin-top: 50px;
                 }
             }
-
             .button-for-cart-planet {
+
                 margin    : auto;
-                width     : 350px;
+                width     : 190px;
                 height    : 60px;
                 position  : relative;
                 margin-top: 70px;
-
+    
                 background   : linear-gradient(90deg, #00041C 0%, rgba(0, 11, 78, 0) 100%);
                 border-radius: 34px;
-
-
+    
+    
                 .text-for-button {
                     font-family: Century Gothic;
                     font-style : normal;
@@ -175,17 +225,48 @@ body {
                     font-size  : 20px;
                     line-height: 25px;
                     /* identical to box height */
-
+                    @media (max-width:768px) {
+                        font-size: 16px;
+                    }
                     letter-spacing: 0.325em;
                     text-transform: uppercase;
-
+    
                     color: #FFFFFF;
-
+    
                     position: absolute;
                     top     : 15px;
                     left    : 20px;
                 }
             }
+            // .button-for-cart-planet {
+            //     margin    : auto;
+            //     width     : 350px;
+            //     height    : 60px;
+            //     position  : relative;
+            //     margin-top: 70px;
+
+            //     background   : linear-gradient(90deg, #00041C 0%, rgba(0, 11, 78, 0) 100%);
+            //     border-radius: 34px;
+
+
+            //     .text-for-button {
+            //         font-family: Century Gothic;
+            //         font-style : normal;
+            //         font-weight: bold;
+            //         font-size  : 20px;
+            //         line-height: 25px;
+            //         /* identical to box height */
+
+            //         letter-spacing: 0.325em;
+            //         text-transform: uppercase;
+
+            //         color: #FFFFFF;
+
+            //         position: absolute;
+            //         top     : 15px;
+            //         left    : 20px;
+            //     }
+            // }
 
 
 

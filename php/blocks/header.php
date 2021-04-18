@@ -1,7 +1,7 @@
 <header>
     <div class="header">
         <div class="header__container">
-            <a href="/index.php" class="header__logo">Distant planets</a>
+            <a href="/index.php" class="header__logo">Свет далеких планет</a>
             <div class="header__menu menu">
                 <div class="menu__icon">
                     <span></span>

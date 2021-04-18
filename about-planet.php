@@ -73,10 +73,10 @@ $planet = mysqli_fetch_assoc($planet);
                                 <p>Минимальный возраст: 16 лет</p>
                             </div>
 
-                            <a href="/registration.php?id=<?=$planet['id']?>">
+                            <a href="/registrationcopy.php?id=<?=$planet['id']?>">
                                 <div class="button-for-cart-planet">
                                     <div class="text-for-button">
-                                        Отправиться в тур
+                                        Отправиться
                                     </div>
                                 </div>
                             </a>
@@ -101,6 +101,8 @@ $planet = mysqli_fetch_assoc($planet);
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="/burger.js"></script>
+
 </body>
 
 </html>

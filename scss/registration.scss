@@ -8,35 +8,38 @@ body {
 
 .main-content {
     width: 100%;
-
+    .container{
+        width: 80%;
+        margin: auto;
+    }
     .heading {
         position  : relative;
         text-align: center;
         overflow: hidden;   
-        margin: 100px;
+        margin: 100px 0;
 
         .text {
             font-family: Montserrat;
             font-style : normal;
             font-weight: normal;
-            font-size  : 40px;
-            line-height: 49px;
-            /* identical to box height */
-
-            letter-spacing: 1.1em;
-            text-transform: uppercase;
-
-            @media (max-width:700px) {
-                // font-size: 3vw;
+            
+            @media (max-width:1000px) {
+                font-size  : 20px;
+            }
+            @media (max-width:400px) {
+                font-size  : 16px;
             }
 
+            font-size  : 40px;
+            line-height: 49px;
+            letter-spacing: 1.1em;
+            text-transform: uppercase;
             color: #FFFFFF;
         }
     }
 
     .planet-cart {
-        max-width: 1214px;
-        min-width: 90px;
+        width: 70%;
 
         margin       : auto;
         margin-bottom: 200px;

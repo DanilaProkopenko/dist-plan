@@ -11,31 +11,42 @@ body {
 }
 
 .main-content {
-    width: 100%;
+    width     : 100%;
+    margin-top: 100px;
 
     .container {
-        max-width: 1200px;
-        margin   : auto;
+        width              : 80%;
+        margin             : auto;
+        // background-color: rgba(255, 0, 179, 0.753);
     }
 
-    .heading {
-        position  : relative;
-        text-align: center;
 
-        margin: 100px;
+    .heading {
+        margin-bottom: 50px;
 
         .text {
-            font-family: Montserrat;
-            font-style : normal;
-            font-weight: normal;
-            font-size  : 40px;
-            line-height: 49px;
-            /* identical to box height */
-
+            font-family   : Montserrat;
+            font-style    : normal;
+            font-weight   : normal;
+            line-height   : 24px;
             letter-spacing: 1.1em;
             text-transform: uppercase;
 
             color: #FFFFFF;
+
+            text-align: center;
+        }
+
+        @media (max-width:320px) {
+            font-size: 16px;
+        }
+
+        @media (min-width:768px) {
+            font-size: 20px;
+        }
+
+        @media (min-width:1025px) {
+            font-size: 40px;
         }
     }
 
@@ -43,27 +54,53 @@ body {
 
         .planet-cart,
         .planet-cart:nth-child(2n+1) {
-            display           : grid;
+            display: grid;
 
             .information {
-                margin: 20px 0;
+                margin     : 20px 0;
                 grid-column: 1;
                 grid-row   : 2;
             }
 
-            .under-text{
+            .under-text {
                 text-align: center;
             }
 
             .planeta {
-                grid-column: 1;
-                grid-row   : 1;
-                align-items: center;
-                margin     : auto;
+
+                margin   : auto;
+                min-width: 200px;
+                max-width: 350px;
+
+                @media (max-width:320px) {
+                    width: 200px;
+                }
+
+                @media (min-width:769px) {
+                    margin-top: 70px;
+                    width     : 200px;
+                }
+
+                @media (min-width:1025px) {
+                    margin-top: 70px;
+                    width     : 300px;
+                }
 
                 img {
-                    width : 300px;
-                    height: 300px;
+                    min-width: 200px;
+                    max-width: 350px;
+
+                    @media (max-width:320px) {
+                        width: 200px;
+                    }
+
+                    @media (min-width:769px) {
+                        width: 250px;
+                    }
+
+                    @media (min-width:1025px) {
+                        width: 300px;
+                    }
                 }
             }
 
@@ -83,8 +120,8 @@ body {
             grid-template-columns: 1fr 1fr;
 
             .planeta {
-                margin    : auto;
-                margin-top: 0;
+                // margin    : auto;
+                // margin-top: 0;
 
                 img {
                     float : right;
@@ -99,7 +136,7 @@ body {
         height       : auto;
         margin       : auto;
         margin-bottom: 200px;
-        padding      : 60px;
+        padding      : 40px;
 
         background     : rgba(91, 91, 91, 0.05);
         border-radius  : 60px;
@@ -127,7 +164,7 @@ body {
 
             .bottom-text {
                 // width : 630px;
-                min-width: 200px;
+                // min-width: 200px;
 
                 margin-top: 20px;
 
@@ -138,6 +175,10 @@ body {
                 line-height: 20px;
 
                 color: #FFFFFF;
+
+                @media (max-width:768px) {
+                    font-size: 14px;
+                }
 
             }
 
@@ -150,12 +191,20 @@ body {
                 background   : linear-gradient(90deg, #00041C 0%, rgba(0, 11, 78, 0) 100%);
                 border-radius: 34px;
 
+                @media (max-width:768px) {
+                    width: 200px;
+                }
 
                 .text-for-button {
                     a {
                         font-family: Century Gothic;
                         font-style : normal;
                         font-weight: bold;
+
+                        @media (max-width:768px) {
+                            font-size: 16px;
+                        }
+
                         font-size  : 20px;
                         line-height: 25px;
                         /* identical to box height */
@@ -182,44 +231,45 @@ body {
 
 @media (max-width:767px) {
     .planet-cart:nth-child(2n+1) {
-    
-            .information {
-                order: 2;
-    
-                .under-text {
-                    text-align: center;
-                }
-    
-                .bottom-text {
-                    text-align  : left;
-                    margin-right: 0;
-    
-                }
-    
-                .button-for-cart-planet {
-                    background: linear-gradient(-90deg, #00041C 0%, rgba(0, 11, 78, 0) 100%);
-                    float     : right;
-    
-                    .text-for-button {
-                        a {
-                            text-align: right;
-                            position  : absolute;
-                            right     : 20px;
-                        }
+
+        .information {
+            order: 2;
+
+            .under-text {
+                text-align: center;
+            }
+
+            .bottom-text {
+                text-align  : left;
+                margin-right: 0;
+
+            }
+
+            .button-for-cart-planet {
+                background: linear-gradient(-90deg, #00041C 0%, rgba(0, 11, 78, 0) 100%);
+                float     : right;
+
+                .text-for-button {
+                    a {
+                        text-align: right;
+                        position  : absolute;
+                        right     : 20px;
                     }
                 }
             }
         }
-    
-    
-    
-        .planeta {
-            margin     : auto;
-            margin-left: 0;
-    
-            order: 1;
-        }
-} 
+    }
+
+
+
+    .planeta {
+        margin     : auto;
+        margin-left: 0;
+
+        order: 1;
+    }
+}
+
 .planet-cart:nth-child(2n+1) {
 
 

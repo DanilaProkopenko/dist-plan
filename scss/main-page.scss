@@ -16,6 +16,10 @@ body {
     max-width: 1700px;
     height   : 100vh;
 
+    @media screen and (orientation:landscape) {
+        min-height: 900px;
+    }
+
     .heading {
         display              : grid;
         grid-template-columns: 1fr 1fr;
@@ -187,7 +191,7 @@ body {
     }
 
     .block-with-information {
-        display: grid;
+        display              : grid;
         grid-template-columns: 1fr 1fr;
 
         .square {
@@ -232,7 +236,7 @@ body {
                 margin-top: 28px;
             }
         }
-        
+
     }
 
 
@@ -307,7 +311,7 @@ body {
     }
 
     .block-with-information {
-        display: grid;
+        display              : grid;
         grid-template-columns: 1fr 1fr;
 
         .square {
@@ -353,8 +357,8 @@ body {
             }
         }
 
-        .space-man{
-            float: right;
+        .space-man {
+            float : right;
             height: 362px;
         }
     }
@@ -365,7 +369,7 @@ body {
         max-width: 750px;
     }
 
-    .black-back{
+    .black-back {
         position: relative;
     }
 
@@ -388,12 +392,12 @@ body {
 
     .main-content {
         padding-top: 15%;
-        height: 100vh;
+        height     : 100vh;
 
         .heading {
-            width    : 784px;
+            width : 784px;
             height: 700px;
-            margin   : 0;
+            margin: 0;
 
             .square {
                 width : 373px;
@@ -437,24 +441,25 @@ body {
                     word-break    : break-all;
                 }
 
-                
+
             }
         }
-        .button__flex__container{
-            display: flex;
+
+        .button__flex__container {
+            display        : flex;
             justify-content: center;
         }
 
-        .button-for-about{
+        .button-for-about {
             position: absolute;
-            bottom: 10%;
+            bottom  : 10%;
         }
 
     }
 
     .block-with-information {
-        display: grid;
-        position: relative;
+        display              : grid;
+        position             : relative;
         grid-template-columns: 1fr 1fr;
 
         .text {
@@ -471,8 +476,8 @@ body {
 
         .space-man {
             img {
-                position: absolute;
-                right: -50px;
+                position : absolute;
+                right    : -50px;
                 transform: scaleX(-1);
                 width    : 400px;
                 height   : 400px;
@@ -507,9 +512,9 @@ body {
         padding-top: 0%;
 
         .heading {
-            width    : 784px;
+            width : 784px;
             height: 700px;
-            margin   : 0;
+            margin: 0;
 
             .square {
                 width : 373px;
@@ -553,7 +558,7 @@ body {
                     word-break    : break-all;
                 }
 
-                
+
             }
         }
 
@@ -561,7 +566,8 @@ body {
 
     .block-with-information {
         position: relative;
-        display: inline-block;
+        display : inline-block;
+
         .text {
             position: absolute;
             top     : 40px;
@@ -575,25 +581,26 @@ body {
         }
 
         .space-man {
-            width: 500px;
+            width : 500px;
             margin: 70px 0 40px 0;
+
             img {
                 margin-right: 100px;
-                transform: scaleX(-1);
-                width    : 400px;
-                height   : 400px;
+                transform   : scaleX(-1);
+                width       : 400px;
+                height      : 400px;
             }
         }
     }
 
-    .button__flex__container{
-        display: flex;
+    .button__flex__container {
+        display        : flex;
         justify-content: center;
     }
 
-    .button-for-about{
+    .button-for-about {
         position: absolute;
-        bottom: 10%;
+        bottom  : 10%;
     }
 }
 
@@ -675,16 +682,17 @@ body {
 
     .block-with-information {
         position: relative;
-        display: inline-block;
+        display : inline-block;
+
         .text {
             position: absolute;
             top     : 15px;
             left    : 15px;
 
-            width: 270px ;
+            width: 270px;
 
-            .square{
-                width: 220px;
+            .square {
+                width : 220px;
                 height: 220px;
             }
 
@@ -694,29 +702,30 @@ body {
         }
 
         .space-man {
-            width: 300px;
+            width : 300px;
             margin: 200px 0 100px 0;
+
             img {
 
                 margin-right: 30px;
-                transform: scaleX(-1);
-                width    : 400px;
-                height   : 400px;
+                transform   : scaleX(-1);
+                width       : 400px;
+                height      : 400px;
             }
         }
     }
 
-    .button__flex__container{
-        display: flex;
+    .button__flex__container {
+        display        : flex;
         justify-content: center;
     }
 
-    .button-for-about{
+    .button-for-about {
         position: absolute;
-        bottom: 10%;
+        bottom  : 10%;
     }
 
-    .button-for-tours{
+    .button-for-tours {
         width: 300px;
     }
 }
@@ -733,7 +742,7 @@ body {
         margin: 0 auto;
 
         .block-with-information {
-            position             : relative;
+            position: relative;
 
             .square {
                 background: linear-gradient(180deg, #00041C 0%, rgba(0, 11, 78, 0) 100%);
@@ -758,7 +767,7 @@ body {
 
             .space-man {
                 img {
-                    float: right;
+                    float    : right;
                     transform: scaleX(-1);
                     width    : 362px;
                     height   : 362px;
@@ -798,7 +807,7 @@ body {
                 text-decoration: none;
             }
         }
-    }    
+    }
 }
 
 @media (max-width:479px) {
@@ -830,7 +839,7 @@ body {
                 text-decoration: none;
             }
         }
-    }    
+    }
 }
 
 
@@ -838,7 +847,7 @@ body {
 // СДАЙДЕР
 .slick-slider {
     overflow-x: hidden;
-    margin: auto;
+    margin    : auto;
 
     .slick-track {
         display    : flex;

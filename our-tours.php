@@ -82,6 +82,8 @@ while ($result = mysqli_fetch_assoc($req)) {
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="/burger.js"></script>
+
 </body>
 
 </html>

@@ -113,7 +113,7 @@
                                 fill="#0024FF" fill-opacity="0.5" />
                         </svg>
                         <div class="text-tours">
-                            <a href="">Открыть список туров</a>
+                            <a href="/our-tours.php">Открыть список туров</a>
                         </div>
                     </div>
                 </div>
@@ -131,7 +131,7 @@
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 
-    <script src="/script.js"></script>
+    <script src="/burger.js"></script>
 </body>
 
 </html>

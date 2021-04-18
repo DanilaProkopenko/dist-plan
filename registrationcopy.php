@@ -15,7 +15,7 @@ $planet = mysqli_fetch_assoc($planet);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Оформление</title>
     <link rel="stylesheet" href="scss/header-footer.css">
-    <link rel="stylesheet" href="scss/registration.css">
+    <link rel="stylesheet" href="scss/registrationcopy.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700;800&family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
@@ -26,8 +26,8 @@ $planet = mysqli_fetch_assoc($planet);
             <?php require_once "php/blocks/header.php" ?>
 
             <div class="main-content">
-                <div class="container">
-                    <div class="heading">
+                <div class="heading">
+                    <div class="container">
                         <div class="text">
                             Заказ
                         </div>
@@ -35,7 +35,7 @@ $planet = mysqli_fetch_assoc($planet);
                 </div>
 
                 <div class="planet-cart">
-                    <div class="information">
+                    <div class="container">
                         <div class="under-text">
                             <?= $planet['name'] ?>
                         </div>
@@ -49,35 +49,34 @@ $planet = mysqli_fetch_assoc($planet);
                                 <input type="text" placeholder="Количество людей">
 
                                 <div class="radio">
-                                    <div class="button">1</div>
-                                    <div class="button">2</div>
-                                    <div class="button">3</div>
-                                    <div class="button">4</div>
+                                        <div class="button">1</div>
+                                        <div class="button">2</div>
+                                        <div class="button">3</div>
+                                        <div class="button">4</div>
                                 </div>
 
                                 <input type="text" placeholder="Номер телефона">
                             </div>
 
-                            <label class="wrapper-login01">
+                            <label class="checkbox">
                                 <input class="checkbox-login01" type="checkbox">
                                 <span class="style-login01"></span>
                                 <span class="text-login01">Согласен на
                                     обработку и предоставления своих данных</span>
                             </label>
+                            <div class="bottom_text">
+                                <p>При заказе вы оставляете нам свои данные, мы с вами свяжемся, проведем обследования,
+                                    необходимые для путешествия на планету “<?=$planet['name']?>”, и после заполним все необходимые
+                                    документы.
+                                </p>
+                            </div>
+                            <div class="button-for-cart-planet">
+                                <div class="text-for-button">
+                                    Заказать
+                                </div>
+                            </div>
                         </form>
 
-                        <div class="bottom_text">
-                            <p>При заказе вы оставляете нам свои данные, мы с вами свяжемся, проведем обследования,
-                                необходимые для путешествия на планету “Марс”, и после заполним все необходимые
-                                документы.
-                            </p>
-                        </div>
-
-                        <div class="button-for-cart-planet">
-                            <div class="text-for-button">
-                                Отправиться в тур
-                            </div>
-                        </div>
                     </div>
 
                 </div>

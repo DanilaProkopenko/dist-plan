@@ -17,6 +17,12 @@ body {
   height: 100vh;
 }
 
+@media screen and (orientation: landscape) {
+  .main-content {
+    min-height: 900px;
+  }
+}
+
 .main-content .heading {
   display: -ms-grid;
   display: grid;
